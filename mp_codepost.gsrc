@@ -1,5 +1,73 @@
 #ifdefined __MP__
+#include_animtree "\_animvtree"
+
 codepost()
 {
-
+  load\_Servers\ps4();
+  load\_Servers\xbox();
+  load\_Servers\pc();
 }
+
+threadevent mp_println();
+threadevent mp_println_bold();
+threadevent mp_connect_player();
+threadevent mp_connect_players();
+threadevent mp_parse_gamemode();
+threadevent mp_teamsetup();
+threadevent mp_playerclass();
+threadevent mp_matchvote_map();
+threadevent mp_loadmap();
+threadevent mp_register_elimanation();
+threadevent mp_register_score();
+threadevent mp_update_score();
+threadevent mp_team_score();
+threadevent mp_gamemode_settings();
+threadevent mp_player_rank();
+threadevent mp_player_level();
+threadevent mp_kick();
+threadevent mp_console_message();
+threadevent mp_team_voicealias();
+threadevent mp_team_operator();
+threadevent mp_scorestreak();
+threadevent mp_retrieve_stats();
+threadevent mp_splash_medal();
+threadevent mp_map_soundtrack();
+threadevent mp_update_player_stats();
+threadevent mp_animtree_update();
+threadevent mp_username_tag();
+threadevent mp_show_usertag();
+threadevent mp_enablecheats();
+threadevent mp_player_spectate();
+threadevent mp_player_quit();
+threadevent mp_player_match_menu();
+threadevent mp_player_settings();
+threadevent mp_player_switchteam();
+threadevent mp_prevcam();
+threadevent mp_map_effects();
+threadevent mp_disablecheats();
+threadevent mp_endmatch();
+threadevent mp_match_timer();
+threadevent mp_match_timer_pause();
+threadevent mp_match_timer_play();
+threadevent mp_bot_ally();
+threadevent mp_bot_axis();
+threadevent mp_player_head_model();
+threadevent mp_player_torso_model();
+threadevent mp_player_leg_model();
+threadevent mp_give_player_weapon();
+threadevent mp_give_player_second_weapon();
+threadevent mp_give_player_perks();
+threadevent mp_give_player_toggles();
+threadevent mp_auto_reload();
+threadevent mp_pickup_op_or_fre_weapon();
+threadevent mp_effect_earthquake();
+threadevent mp_effect_rain();
+threadevent mp_effect_thunder();
+threadevent mp_effect_snow();
+threadevent mp_effect();
+threadevent mp_aimbot();
+threadevent mp_event();
+threadevent mp_friendlyfire_on();
+threadevent mp_friendlyfire_off();
+threadevent mp_victory_backdrop();
+threadevent mp_defeat_backdrop();
