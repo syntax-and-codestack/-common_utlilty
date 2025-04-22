@@ -1,0 +1,16 @@
+{
+  "scopeName": "trigger_codepost.gsrc",
+  "name": "MyLang",
+  "fileTypes": ["gsrc"],
+  "patterns": [
+    {
+      "name": "keyword.control.mycode",
+      "match": "\\b(if|else|while|return|threadevent|codepost)\\b"
+    },
+    {
+      "name": "comment.line.double-slash.mycode",
+      "match": "//.*$"
+    }
+  ],
+  "repository": {}
+}
