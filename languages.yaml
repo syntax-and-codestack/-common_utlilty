@@ -2,6 +2,7 @@ MyLang:
   type: programming
   extensions: [".gsrc"]
   tm_scope: trigger_codepost.gsrc
+  scope: keyword.control
   ace_mode: text
   color: "#FF5733"
   filenames: []
