@@ -1,0 +1,5 @@
+#ifdefined __MP__
+codepost()
+{
+
+}
