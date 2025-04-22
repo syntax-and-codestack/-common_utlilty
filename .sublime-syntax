@@ -3,7 +3,7 @@
 name: MyLang
 file_extensions:
   - gsrc
-scope: source.gsrc
+scope: trigger_codepost.gsrc
 
 contexts:
   main:
