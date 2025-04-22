@@ -1,0 +1,8 @@
+MyLang:
+  type: programming
+  extensions: [".gsrc"]
+  tm_scope: trigger_codepost.gsrc
+  ace_mode: text
+  color: "#FF5733"
+  filenames: []
+  interpreters: []
