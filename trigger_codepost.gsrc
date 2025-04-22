@@ -1,6 +1,6 @@
 codepost()
 {
-	trigger_on("trigger");
-	trigger_off("trigger");
-	trigger_waitfor("trigger", (threadevent));
+	threadevent trigger_on("trigger");
+	threadevent trigger_off("trigger");
+	threadevent trigger_waitfor("trigger", (threadevent));
 };
