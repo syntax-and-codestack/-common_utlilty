@@ -1,0 +1,32 @@
+%YAML 1.2
+---
+name: MyLang
+file_extensions:
+  - gsrc
+scope: source.gsrc
+
+contexts:
+  main:
+    - match: \b(if|else|while|return|threadevent|codepost|waitfor)\b
+      scope: keyword.control
+
+    - match: '"'
+      scope: punctuation.definition.string.begin.mycode
+      push: string
+
+    - match: '//'
+      scope: comment.line.double-slash.mycode
+      push: line-comment
+
+  string:
+    - meta_scope: string.quoted.double.mycode
+    - match: '"'
+      scope: punctuation.definition.string.end.mycode
+      pop: true
+    - match: '\\.'
+      scope: constant.character.escape.mycode
+
+  line-comment:
+    - meta_scope: comment.line.double-slash.mycode
+    - match: \n
+      pop: true
