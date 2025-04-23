@@ -20,7 +20,7 @@ common_utility()
       {
               if(level.csv.txt != vehicle_humvee_assets())
               {
-                    level.debug_menu("ERROR : 400 Humvee assets not found update csv file\n");
+                    level.calldebug_menu("ERROR : 400 Humvee assets not found update csv file\n");
                     level.changelevel("mainmenu.menu");
               }
       }
