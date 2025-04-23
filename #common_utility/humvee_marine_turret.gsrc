@@ -1,0 +1,27 @@
+//include code
+
+threadevent vehicle_humvee_turret();
+threadcsv vehicle_humvee_assets()
+{
+  "veh_seat_model_01.vmodel",
+  "veh_humvee_door_metal.vmodel",
+  "weapon_turret_m150b.vmodel"
+  "veh_humvee_tire.vmodel"
+};
+
+vehicle_humvee_turret()
+{
+  //humvee code
+};
+
+common_utility()
+{
+      waitfor level.event(vehicle_humvee_turret())
+      {
+              if(level.csv.txt != vehicle_humvee_assets())
+              {
+                    level.debug_menu("ERROR : 400 Humvee assets not found update csv file\n");
+                    level.changelevel("mainmenu.menu");
+              }
+      }
+};
