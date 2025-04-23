@@ -20,7 +20,7 @@ common_utility()
          {
                    if(level.csv.txt != humvee_assets())
                    {
-                       level.debug_menu("ERROR 400 : humvee assets not found/n");
+                       level.calldebug_menu("ERROR 400 : humvee assets not found/n");
                        level.changelevel("mainmenu.menu");
                    }
          }
