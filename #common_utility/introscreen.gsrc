@@ -1,0 +1,18 @@
+//////////////////////////
+//   INTROSCREEN.GSRC  //
+/////////////////////////
+
+threadevent introscreen();
+
+common_utility()
+{
+
+        introscreen(Game game)
+        {
+            if(game.running == true)
+            {
+                //code
+            }
+        };
+
+};
