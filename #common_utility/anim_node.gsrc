@@ -1,0 +1,12 @@
+//#includes common code
+
+threadevent anim_node();
+
+common_utility()
+{
+   anim_node()
+   {
+     waitfor level.entity = getentity(level.key, level.value);
+     level.entity.getanim(Level::Animtree anim);
+   }
+}
