@@ -1,0 +1,42 @@
+//codepost for spawnflags
+
+threadevent spawnflagpost();
+
+codepost()
+{
+      threadvar spawnflag;
+      waitfor level.event(spawnflagpost())
+      {
+            spawnflagpost()
+            {
+                if(level.flagid = spawnflag == 1)
+                {
+                    level.classname = "brush";
+                }
+
+                if(level.flagid = spawnflag == 2)
+                {
+                    level.classname = "scriptmodel";
+                }
+
+                if(level.flagid = spawnflag == 22)
+                {
+                    level.classname = "scriptbrush";
+                }
+
+                if(level.flagid = spawflag == 32)
+                {
+                    level.classname = "actor";
+                }
+
+                if(level.flagid = spawflag == 64)
+                {
+                    level.classname = "nodespawn";
+                }
+                
+            }
+        }
+
+
+
+};
