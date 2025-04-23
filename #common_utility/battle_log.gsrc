@@ -1,7 +1,16 @@
 //includes code
 
+threadevent battle_log_wav_file();
+threadevent battle_log_run_wav();
+threadvar battle_log_tick();
+threadevent battle_log_loop();
+
 common_utility()
 {
+  Level& level;
 
-
-};
+  waitfor level.event(battle_log_wav_file());
+  waitfor level.event(battle_log_run_wav());
+  waitfor level.variable(battle_log_tick());
+  waitfor level.event(battle_log_loop());
+}
