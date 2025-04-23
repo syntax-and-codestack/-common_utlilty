@@ -1,0 +1,30 @@
+//includes code
+//includes animtree
+
+threadevent helicopter_blackhawk_script();
+precachecsv helicopter_assets()
+{
+  "helicopter_black_hawk.vmodel",
+  "helicopter_black_hawk_door.vmodel",
+  "com_rope_coiled.vmodel"
+  "com_rope_uncoiled.vmodel"
+  "helicopter_blade_static.vmodel"
+  "helicopter_blade_non_static.vmodel"
+};
+
+helicopter_blackhawk_script()
+{
+   //code zone here
+};
+
+common_utility()
+{
+    waitfor level.event(helicopter_blackhawk_script())
+    {
+               if(!level.csv.txt != helicopter_assets())
+               {
+                     level.calldebug_menu("ERROR 400 : helicopter black hawk assets not found/n");
+                     level.changelevel("mainmenu.menu");
+               }
+    }
+}
